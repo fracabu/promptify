@@ -11,9 +11,10 @@ const hostname = '127.0.0.1';
 // Custom server with Socket.IO integration
 async function createCustomServer() {
   try {
-    // Create Next.js app
-    const nextApp = next({ 
+    // Create Next.js app with Turbopack in dev mode
+    const nextApp = next({
       dev,
+      turbo: dev, // Enable Turbopack in development
       dir: process.cwd(),
       // In production, use the current directory where .next is located
       conf: dev ? undefined : { distDir: './.next' }

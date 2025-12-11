@@ -61,11 +61,11 @@ function AnimatedContent() {
           <div className="container mx-auto px-4 py-8 relative">
             <div className="text-center mb-8">
               <div className="mb-8">
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-orange-600 dark:from-purple-400 dark:via-blue-400 dark:to-orange-400">
                 Framework per prompt efficaci, subito.
               </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light mb-8">
-                  Scopri e testa i framework più efficaci per ottimizzare le tue interazioni con l'AI
+                  Oltre 30 framework professionali pronti all'uso. Testa con OpenAI, Gemini o ZAI e ottieni risultati superiori in pochi secondi.
                 </p>
                 
                 {/* Search Bar Prominente */}
@@ -171,11 +171,11 @@ function AnimatedContent() {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <div className="mb-8">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                Framework per prompt efficaci ed efficienti
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-orange-600 dark:from-purple-400 dark:via-blue-400 dark:to-orange-400">
+                Framework per prompt efficaci, subito.
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light mb-8">
-                Scopri e testa i framework più efficaci per ottimizzare le tue interazioni con l'AI
+                Oltre 30 framework professionali pronti all'uso. Testa con OpenAI, Gemini o ZAI e ottieni risultati superiori in pochi secondi.
               </p>
               
               {/* Search Bar Prominente */}

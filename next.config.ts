@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  // Rimuoviamo experimental.turbo - si abilita tramite CLI flag
 };
 
 export default nextConfig;

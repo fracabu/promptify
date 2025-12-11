@@ -152,3 +152,4 @@ Costruito con ❤️ per la community di sviluppatori e creator.
 Powered by modern web technologies e AI innovation. 🚀
 
 **Parliamoci chiaro con gli AI!** 🤖✨
+

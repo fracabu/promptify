@@ -22,8 +22,14 @@ export function CategoryFrameworks({ category, frameworks, isVisible }: Category
       {/* Category Header */}
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-3 mb-4">
-          <div className={`p-3 rounded-2xl ${category.color} bg-opacity-10`}>
-            <IconComponent className={`h-8 w-8 ${category.color.replace('bg-', 'text-')}`} />
+          <div className={`p-3 rounded-2xl ${
+            category.id === 'fondamentali' ? 'bg-blue-600' :
+            category.id === 'business' ? 'bg-emerald-600' :
+            category.id === 'creativi' ? 'bg-purple-600' :
+            category.id === 'avanzati' ? 'bg-orange-600' :
+            category.id === 'problem-solving' ? 'bg-pink-600' : 'bg-blue-600'
+          }`}>
+            <IconComponent className="h-8 w-8 text-white" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
             {category.name}

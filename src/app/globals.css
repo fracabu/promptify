@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "tw-animate-css";
+/* @import "tw-animate-css"; */
 
 /* Note: @custom-variant and @theme inline are Tailwind v4 syntax - commented out for v3 compatibility */
 /* @custom-variant dark (&:is(.dark *)); */
@@ -79,6 +79,10 @@
 }
 
 @layer base {
+  html {
+    font-size: 106.25%; /* Aumenta il font base da 16px a 17px */
+  }
+
   * {
     @apply border-border outline-ring/50;
   }

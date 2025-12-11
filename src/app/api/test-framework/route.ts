@@ -96,26 +96,9 @@ export async function POST(request: NextRequest) {
 
     // Usa la chiave API personale se fornita, altrimenti usa il metodo di default
     if (provider && apiKey) {
-      try {
-        result = await callWithPersonalKey(prompt, framework, provider, apiKey)
-      } catch (error: any) {
-        console.error(`Primary provider ${provider} failed:`, error.message)
-        
-        // Fallback automatico se il provider primario fallisce
-        if (provider === 'gemini' && (error.message.includes('location') || error.message.includes('not found'))) {
-          console.log('Gemini not available, falling back to ZAI...')
-          result = await callZAIWithRetry(prompt, framework)
-        } else if (provider === 'openai' && (error.message.includes('invalid') || error.message.includes('quota'))) {
-          console.log('OpenAI API issue, falling back to ZAI...')
-          result = await callZAIWithRetry(prompt, framework)
-        } else if (provider === 'zai' && error.message.includes('invalid')) {
-          console.log('ZAI API issue, falling back to default ZAI...')
-          result = await callZAIWithRetry(prompt, framework)
-        } else {
-          throw error
-        }
-      }
+      result = await callWithPersonalKey(prompt, framework, provider, apiKey)
     } else {
+      // Nessun provider specificato - usa ZAI di default
       result = await callZAIWithRetry(prompt, framework)
     }
 
@@ -128,9 +111,10 @@ export async function POST(request: NextRequest) {
 
   } catch (error: any) {
     console.error('Errore nel test del framework:', error)
-    
+
     let errorMessage = 'Errore durante l\'elaborazione della richiesta'
-    
+    let userFriendlyMessage = ''
+
     if (error.message) {
       if (error.message.includes('timeout')) {
         errorMessage = 'Timeout del server AI. Riprova tra qualche minuto.'
@@ -138,15 +122,22 @@ export async function POST(request: NextRequest) {
         errorMessage = 'Errore di connessione al servizio AI. Riprova più tardi.'
       } else if (error.message.includes('rate limit')) {
         errorMessage = 'Troppe richieste. Attendi qualche secondo prima di riprovare.'
+      } else if (error.message.includes('fetch failed') || error.message.includes('UNABLE_TO_VERIFY')) {
+        errorMessage = 'Errore di connessione SSL con il provider. Questo può accadere su Windows con alcuni certificati.'
+        userFriendlyMessage = 'Prova con un provider diverso (OpenAI o ZAI) o contatta l\'amministratore.'
+      } else if (error.message.includes('Configuration file not found')) {
+        errorMessage = 'Provider ZAI non configurato.'
+        userFriendlyMessage = 'Per usare ZAI senza chiave personale, configura il file .z-ai-config. Oppure inserisci una chiave API personale nelle impostazioni.'
       } else {
         errorMessage = error.message
       }
     }
-    
+
     return NextResponse.json(
-      { 
-        success: false, 
-        error: errorMessage
+      {
+        success: false,
+        error: errorMessage,
+        suggestion: userFriendlyMessage || undefined
       },
       { status: 500 }
     )

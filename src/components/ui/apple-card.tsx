@@ -45,8 +45,8 @@ export function AppleCard({
         
         <CardHeader className="pb-4 relative z-10">
           <div className="flex items-center justify-between mb-3">
-            <div className={`p-3 rounded-2xl ${color || 'bg-slate-500'} bg-opacity-10 group-hover:scale-110 transition-transform duration-300 ease-out`}>
-              <IconComponent className={`h-6 w-6 ${(color || 'bg-slate-500').replace('bg-', 'text-')}`} />
+            <div className={`p-3 rounded-2xl ${color || 'bg-slate-600'} group-hover:scale-110 transition-transform duration-300 ease-out`}>
+              <IconComponent className="h-6 w-6 text-white" />
             </div>
             <Badge variant="secondary" className="text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 border-0">
               {category}

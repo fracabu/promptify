@@ -42,12 +42,18 @@ export function MacroCategoryCard({ category, frameworkCount, isVisible, index }
         
         <CardHeader className="pb-4 relative z-10">
           <div className="flex items-center justify-between mb-3">
-            <div className={`p-4 rounded-2xl ${category.color} bg-opacity-10 group-hover:scale-110 transition-transform duration-300 ease-out flex items-center justify-center`}>
-              {category.id === 'fondamentali' && <Target className={`h-8 w-8 ${category.color.replace('bg-', 'text-')}`} />}
-              {category.id === 'business' && <Compass className={`h-8 w-8 ${category.color.replace('bg-', 'text-')}`} />}
-              {category.id === 'creativi' && <Sparkles className={`h-8 w-8 ${category.color.replace('bg-', 'text-')}`} />}
-              {category.id === 'avanzati' && <Brain className={`h-8 w-8 ${category.color.replace('bg-', 'text-')}`} />}
-              {category.id === 'problem-solving' && <CheckCircle className={`h-8 w-8 ${category.color.replace('bg-', 'text-')}`} />}
+            <div className={`p-4 rounded-2xl group-hover:scale-110 transition-transform duration-300 ease-out flex items-center justify-center ${
+              category.id === 'fondamentali' ? 'bg-blue-600' :
+              category.id === 'business' ? 'bg-emerald-600' :
+              category.id === 'creativi' ? 'bg-purple-600' :
+              category.id === 'avanzati' ? 'bg-orange-600' :
+              category.id === 'problem-solving' ? 'bg-pink-600' : 'bg-blue-600'
+            }`}>
+              {category.id === 'fondamentali' && <Target className="h-8 w-8 text-white" />}
+              {category.id === 'business' && <Compass className="h-8 w-8 text-white" />}
+              {category.id === 'creativi' && <Sparkles className="h-8 w-8 text-white" />}
+              {category.id === 'avanzati' && <Brain className="h-8 w-8 text-white" />}
+              {category.id === 'problem-solving' && <CheckCircle className="h-8 w-8 text-white" />}
             </div>
             <Badge variant="secondary" className="text-sm font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 border-0">
               {frameworkCount} framework
