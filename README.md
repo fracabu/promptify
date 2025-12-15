@@ -1,155 +1,111 @@
-# 🤖 Promptify - Framework AI per Prompt Engineering
+<h1 align="center">Promptify</h1>
+<h3 align="center">AI Prompt Engineering Framework</h3>
 
-Un'applicazione web moderna e completa per scoprire, testare e utilizzare i framework più efficaci per ottimizzare le interazioni con l'intelligenza artificiale. Progettata per aiutare sviluppatori, content creator e professionisti a comunicare meglio con gli AI.
+<p align="center">
+  <em>Discover, test, and use 30+ AI frameworks for better prompts</em>
+</p>
 
-## ✨ Caratteristiche Principali
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-15-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white" alt="Gemini" />
+</p>
 
-Promptify è molto più di un semplice sito web - è un ecosistema completo per il prompt engineering:
-
-### 🎯 **Framework AI Professionali**
-- **30+ Framework Specializzati**: APE, AIDA, BAB, CRAFT, Chain-of-Thought, e molti altri
-- **Categorizzazione Intelligente**: Framework divisi per difficoltà e area di applicazione
-- **Test Interattivo**: Prova ogni framework con i tuoi casi d'uso reali
-- **Template Personalizzabili**: Modifica e adatta i framework alle tue esigenze
-
-### 🔑 **Gestione Chiavi API Personali**
-- **Multi-Provider Support**: OpenAI (GPT-4, GPT-3.5), Google Gemini, ZAI
-- **Sicurezza Massima**: Le tue chiavi vengono salvate solo nel tuo browser
-- **Test Automatici**: Verifica la validità delle chiavi prima di salvarle
-- **Switch Istantaneo**: Cambia provider con un click
-
-### 🎨 **Esperienza Utente Avanzata**
-- **Design Responsive**: Perfetto su desktop, tablet e mobile
-- **Tema Scuro/Chiaro**: Passa seamlessly tra i temi
-- **Animazioni Fluide**: Interfacce moderne con Framer Motion
-- **Ricerca Intelligente**: Trova rapidamente il framework perfetto
-
-## 🛠️ Stack Tecnologico
-
-Promptify è costruito con tecnologie all'avanguardia per garantire prestazioni e affidabilità:
-
-### 🏗️ **Core Framework**
-- **⚡ Next.js 15** - React framework con App Router
-- **📘 TypeScript 5** - Type safety per un codice robusto
-- **🎨 Tailwind CSS 4** - Design system moderno e flessibile
-
-### 🧩 **UI & Interazione**
-- **🎯 shadcn/ui** - Componenti accessibili e personalizzabili
-- **🌈 Framer Motion** - Animazioni fluide e micro-interazioni
-- **🎨 Next Themes** - Gestione temi chiari/scuri
-- **📊 Recharts** - Visualizzazioni dati interattive
-
-### 💾 **Stato & Dati**
-- **🐻 Zustand** - State management leggero e potente
-- **🔄 TanStack Query** - Sincronizzazione dati server-client
-- **🗄️ Prisma** - ORM type-safe per database operations
-
-### 🔐 **Sicurezza & API**
-- **🔐 Architettura Sicura** - Le chiavi API non lasciano mai il browser
-- **🌐 API Multi-Provider** - Integrazione con OpenAI, Gemini, ZAI
-- **🛡️ Validazione Input** - Protezione completa contro injection
-
-## 🚀 Quick Start
-
-```bash
-# Installa le dipendenze
-npm install
-
-# Avvia il server di sviluppo
-npm run dev
-
-# Build per produzione
-npm run build
-
-# Avvia server produzione
-npm start
-```
-
-Apri [http://localhost:3000](http://localhost:3000) per iniziare a usare Promptify!
-
-## 🎯 Come Usare Promptify
-
-### 1. **Configura le Tue Chiavi API**
-- Vai in `/impostazioni` o clicca sull'icona ⚙️ nell'header
-- Inserisci le tue chiavi API personali (OpenAI, Gemini, ZAI)
-- Testa le chiavi per verificare che funzionino correttamente
-- Le chiavi vengono salvate in modo sicuro nel tuo browser
-
-### 2. **Esplora i Framework**
-- Naviga tra le categorie: Fondamentali, Business, Creativi, Avanzati
-- Usa la ricerca per trovare framework specifici
-- Leggi le descrizioni e gli esempi pratici
-
-### 3. **Testa i Framework**
-- Scegli un framework e inserisci il tuo prompt
-- Seleziona il provider AI che preferisci usare
-- Ottieni risultati istantanei con il framework applicato
-- Copia e modifica i risultati secondo le tue esigenze
-
-## 🔑 Provider Supportati
-
-### 🧠 **OpenAI**
-- Modelli: GPT-4, GPT-3.5-turbo
-- Ideale per: Content creation, analisi testi, programmazione
-- Chiavi: `sk-...`
-
-### 🤖 **Google Gemini**
-- Modelli: Gemini Pro
-- Ideale per: Ragionamento complesso, multimodalità
-- Chiavi: `AIza...`
-
-### ⚡ **ZAI**
-- Modelli: GPT-3.5-turbo via ZAI platform
-- Ideale per: Sviluppo web, prototipazione rapida
-- Chiavi: `zai-...`
-
-## 📚 Categorie Framework
-
-### 🎯 **Fondamentali**
-- APE, BAB, PAR - Perfetti per principianti
-- Struttura base per prompt efficaci
-
-### 💼 **Business & Professionale**
-- AIDA, SMART, STAR - Marketing e management
-- Framework per obiettivi e performance
-
-### 🎨 **Creativi & Marketing**
-- CRAFT, ROSES, SPARC - Content creation
-- Storytelling e comunicazione persuasiva
-
-### 🔧 **Avanzati & Sistema**
-- Chain-of-Thought, Tree-of-Thoughts - Problem solving complesso
-- Reasoning e pensiero strutturato
-
-### 🛠️ **Problem Solving**
-- CARE, GRADE, TRACE - Analisi e risoluzione problemi
-- Framework per consulenti e analisti
-
-## 🛡️ Sicurezza e Privacy
-
-- ✅ **Chiavi Locali**: Le tue API keys vengono salvate solo nel tuo browser
-- ✅ **Nessuna Trasmissione**: Le chiavi non vengono mai inviate ai nostri server
-- ✅ **Connessioni Dirette**: Chiamate API dirette ai provider
-- ✅ **Cancellazione Istantanea**: Rimuovi le chiavi in qualsiasi momento
-- ✅ **HTTPS Sempre**: Tutte le comunicazioni sono crittografate
-
-## 🤝 Contributi
-
-Promptify è un progetto open-source. Contributi sono benvenuti!
-
-- 🐛 Segnala bug su GitHub Issues
-- 💡 Suggerisci nuovi framework o funzionalità
-- 📝 Migliora la documentazione
-- 🔧 Contribuisci al codice
-
-## 📄 Licenza
-
-MIT License - senti libero di usare Promptify per i tuoi progetti personali e commerciali.
+<p align="center">
+  :gb: <a href="#english">English</a> | :it: <a href="#italiano">Italiano</a>
+</p>
 
 ---
 
-Costruito con ❤️ per la community di sviluppatori e creator.  
-Powered by modern web technologies e AI innovation. 🚀
+<a name="english"></a>
+## :gb: English
 
-**Parliamoci chiaro con gli AI!** 🤖✨
+### Overview
 
+A modern web application to discover, test, and use the most effective frameworks for AI interactions. 30+ specialized frameworks including APE, AIDA, CRAFT, Chain-of-Thought, and more.
+
+### Features
+
+- **30+ AI Frameworks** - APE, AIDA, BAB, CRAFT, CoT, and many more
+- **Multi-Provider Support** - OpenAI, Google Gemini, ZAI
+- **Interactive Testing** - Try frameworks with your use cases
+- **Secure API Keys** - Stored only in your browser
+- **Dark/Light Theme** - Seamless theme switching
+
+### Framework Categories
+
+| Category | Examples |
+|----------|----------|
+| Fundamentals | APE, BAB, PAR |
+| Business | AIDA, SMART, STAR |
+| Creative | CRAFT, ROSES, SPARC |
+| Advanced | Chain-of-Thought, Tree-of-Thoughts |
+
+### Quick Start
+
+```bash
+git clone https://github.com/fracabu/promptify.git
+cd promptify
+npm install
+npm run dev
+```
+
+Access at `http://localhost:3000`
+
+---
+
+<a name="italiano"></a>
+## :it: Italiano
+
+### Panoramica
+
+Un'applicazione web moderna per scoprire, testare e utilizzare i framework piu efficaci per le interazioni AI. 30+ framework specializzati tra cui APE, AIDA, CRAFT, Chain-of-Thought e altri.
+
+### Funzionalita
+
+- **30+ Framework AI** - APE, AIDA, BAB, CRAFT, CoT e molti altri
+- **Supporto Multi-Provider** - OpenAI, Google Gemini, ZAI
+- **Test Interattivo** - Prova i framework con i tuoi casi d'uso
+- **API Key Sicure** - Salvate solo nel tuo browser
+- **Tema Scuro/Chiaro** - Cambio tema seamless
+
+### Categorie Framework
+
+| Categoria | Esempi |
+|-----------|--------|
+| Fondamentali | APE, BAB, PAR |
+| Business | AIDA, SMART, STAR |
+| Creativi | CRAFT, ROSES, SPARC |
+| Avanzati | Chain-of-Thought, Tree-of-Thoughts |
+
+### Avvio Rapido
+
+```bash
+git clone https://github.com/fracabu/promptify.git
+cd promptify
+npm install
+npm run dev
+```
+
+Accedi su `http://localhost:3000`
+
+---
+
+## Tech Stack
+
+- Next.js 15, TypeScript, Tailwind CSS
+- shadcn/ui, Framer Motion
+- Zustand, TanStack Query
+
+## License
+
+MIT
+
+---
+
+<p align="center">
+  <a href="https://github.com/fracabu">
+    <img src="https://img.shields.io/badge/Made_by-fracabu-8B5CF6?style=flat-square" alt="Made by fracabu" />
+  </a>
+</p>
