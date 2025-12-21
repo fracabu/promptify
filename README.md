@@ -25,6 +25,9 @@
 
 A modern web application to discover, test, and use the most effective frameworks for AI interactions. 30+ specialized frameworks including APE, AIDA, CRAFT, Chain-of-Thought, and more.
 
+<img width="1600" height="740" alt="image" src="https://github.com/user-attachments/assets/1e6fed9a-8d99-4244-8841-2a2c3cda38f8" />
+
+
 ### Features
 
 - **30+ AI Frameworks** - APE, AIDA, BAB, CRAFT, CoT, and many more
@@ -32,6 +35,9 @@ A modern web application to discover, test, and use the most effective framework
 - **Interactive Testing** - Try frameworks with your use cases
 - **Secure API Keys** - Stored only in your browser
 - **Dark/Light Theme** - Seamless theme switching
+
+<img width="1600" height="741" alt="image" src="https://github.com/user-attachments/assets/9522c10b-775f-44f8-9bc3-dd836690b95b" />
+
 
 ### Framework Categories
 
@@ -41,6 +47,9 @@ A modern web application to discover, test, and use the most effective framework
 | Business | AIDA, SMART, STAR |
 | Creative | CRAFT, ROSES, SPARC |
 | Advanced | Chain-of-Thought, Tree-of-Thoughts |
+
+<img width="1598" height="739" alt="image" src="https://github.com/user-attachments/assets/504fd210-db5e-43c9-a410-090925398f9d" />
+
 
 ### Quick Start
 
